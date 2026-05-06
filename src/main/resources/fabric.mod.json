@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "moderation_helper_gui",
+  "version": "${version}",
+  "name": "Moderation Helper GUI",
+  "description": "Client-side Fabric moderation helper: chat nickname GUI, punishments, screenshots, recent players, session stats, and OBS recording control.",
+  "authors": ["Wqkcpf", "ChatGPT"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.moderationhelper.ModerationHelperClient"
+    ]
+  },
+  "mixins": [
+    "moderation_helper_gui.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
